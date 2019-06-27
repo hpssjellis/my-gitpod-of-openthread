@@ -6,6 +6,7 @@ ports:
   
 tasks:
   -  command: mkdir /workspace/logs                                                                     &&
+              mkdir /workspace/openthread-all                                                           &&
               touch /workspace/logs/gitpod-install-log.txt                                              &&
        
 
