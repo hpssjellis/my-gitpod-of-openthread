@@ -7,7 +7,7 @@ RUN apt-get update                                                              
                           libdbus-1-dev libboost-dev libreadline-dev autoconf autoconf-archive          \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
     
-RUN     add-apt-repository ppa:team-gcc-arm-embedded/ppa && apt-get update && apt-get -y install gcc-arm-embedded 
+RUN     apt-add-repository ppa:team-gcc-arm-embedded/ppa && apt-get update && apt-get  install -y gcc-arm-embedded 
  
 ## note not installing libreadline
 
