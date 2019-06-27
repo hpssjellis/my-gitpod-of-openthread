@@ -4,8 +4,7 @@ USER root
 
 RUN apt-get update                                                                                      \
     && apt-get install -y dbus gcc g++ automake libtool lsb-release make  clang-format-6.0              \
-                          libdbus-1-dev libboost-dev libreadline-dev autoconf autoconf-archive          \
-    && add-apt-repository -y ppa:team-gcc-arm-embedded/ppa                                              \                      
+                          libdbus-1-dev libboost-dev libreadline-dev autoconf autoconf-archive          \                    
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
     
  
