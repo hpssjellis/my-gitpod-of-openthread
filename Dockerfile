@@ -14,6 +14,9 @@ USER gitpod
   
 RUN mkdir -p /home/gitpod/logs                                                                            \ 
     && touch /home/gitpod/logs/myDockerlog.txt                                                            \
+    && add-apt-repository ppa:team-gcc-arm-embedded/ppa                                                   \
+    && apt-get update                                                                                     \
+    && apt-get -y install gcc-arm-embedded                                                                \
     && echo "Installation start, made some folders in /home/gitpod" >> /home/gitpod/logs/myDockerlog.txt  \
     && echo "Installation end"                                      >> /home/gitpod/logs/myDockerlog.txt  
    
