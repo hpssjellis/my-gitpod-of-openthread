@@ -10,7 +10,18 @@ tasks:
               touch /workspace/logs/gitpod-install-log.txt                                              &&
        
 
-              echo "Starting .gitpod.yml installation" &>>  /workspace/logs/gitpod-install-log.txt      &&     
+              echo "Starting .gitpod.yml installation" &>>  /workspace/logs/gitpod-install-log.txt      &&
+              cd /workspace/openthread-all                                                              &&
+              git clone https://github.com/openthread/wpantund.git                                      &&
+              git clone https://github.com/openthread/borderrouter.git                                  &&
+              git clone https://github.com/openthread/openthread.git                                    &&
+              git clone https://github.com/openthread/pyspinel.git                                      &&
+              cd /workspace/openthread-all/wpantund                                                     &&
+              git checkout full/latest-release                                                          &&
+              cd /workspace/openthread-all/openthread-all/openthread                                    &&
+              git checkout full/latest-release                                                          &&
+              
+              
               echo "Starting Apache"                   &>>  /workspace/logs/gitpod-install-log.txt      &&   
               apachectl start                                                                           &&
               gp preview $(gp url 8001)                                                                 &&
