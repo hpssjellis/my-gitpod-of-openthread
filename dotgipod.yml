@@ -1,0 +1,21 @@
+image:
+  file: Dockerfile
+  
+ports:
+  - port: 8001
+  
+tasks:
+  -  command: mkdir /workspace/logs                                                                     &&
+              touch /workspace/logs/gitpod-install-log.txt                                              &&
+       
+
+              echo "Starting .gitpod.yml installation" &>>  /workspace/logs/gitpod-install-log.txt      &&     
+              echo "Starting Apache"                   &>>  /workspace/logs/gitpod-install-log.txt      &&   
+              apachectl start                                                                           &&
+              gp preview $(gp url 8001)                                                                 &&
+              
+              
+              echo "Ending .gitpod.yml installation"  &>>   /workspace/logs/gitpod-install-log.txt    
+              
+              
+     
