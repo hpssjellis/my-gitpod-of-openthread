@@ -3,7 +3,7 @@ FROM gitpod/workspace-full:latest
 USER root
 
 RUN apt-get update                                                                                        \
-    && apt-get install -y dbus   gcc g++   libdbus-1-dev libboost-dev     \
+    && apt-get install -y dbus   gcc g++   libdbus-1-dev libboost-dev    libtool autoconf autoconf-archive  \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 ## note not installing libreadline
