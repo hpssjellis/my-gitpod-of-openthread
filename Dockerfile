@@ -2,9 +2,9 @@ FROM gitpod/workspace-full:latest
 
 USER root
 
-RUN apt-get update                                                                                    \
-    && apt-get install -y install dbus libreadline gcc g++ libdbus-1-dev libboost-dev libreadline-dev \
-    libtool autoconf autoconf-archive   screen                                                               \
+RUN apt-get update                                                                                        \
+    && apt-get install -y dbus libreadline gcc g++ libdbus-1-dev libboost-dev libreadline-dev             \
+    libtool autoconf autoconf-archive screen                                                              \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 
