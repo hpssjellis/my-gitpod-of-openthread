@@ -2,10 +2,13 @@ FROM gitpod/workspace-full:latest
 
 USER root
 
-RUN apt-get update                                                                                                                \
-    && apt-get install -y dbus gcc g++ automake libtool lsb-release make  clang-format-6.0                                        \
-                          libdbus-1-dev libboost-dev libreadline-dev autoconf autoconf-archive  software-properties-common        
-   
+RUN apt-get update                                                                                        \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends dbus gcc g++ automake    \
+               libtool lsb-release make  clang-format-6.0   libdbus-1-dev libboost-dev libreadline-dev    \                                     
+               autoconf autoconf-archive  software-properties-common          
+               
+               
+# will clean folders last   
     
  
 ## note not installing libreadline
