@@ -7,7 +7,7 @@ RUN apt-get update                                                              
                libtool lsb-release make  clang-format-6.0   libdbus-1-dev libboost-dev libreadline-dev    \                                     
                autoconf autoconf-archive  software-properties-common                                      \
     && apt-get update  \   
-    && DEBIAN_FRONTEND=noninteractive add-apt-repository  ppa:team-gcc-arm-embedded/ppa \
+    && DEBIAN_FRONTEND=noninteractive add-apt-repository -y  ppa:team-gcc-arm-embedded/ppa \
     && apt-get update  \   
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends gcc-arm-embedded
  
