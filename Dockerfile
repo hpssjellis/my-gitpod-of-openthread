@@ -5,7 +5,7 @@ USER root
 RUN apt-get update                                                                                        \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends dbus gcc g++ automake    \
                libtool lsb-release make  clang-format-6.0   libdbus-1-dev libboost-dev libreadline-dev    \                                     
-               autoconf autoconf-archive  software-properties-common                                      \
+               autoconf autoconf-archive  software-properties-common   libreadline                        \
     && apt-get update  #\   
    # && DEBIAN_FRONTEND=noninteractive add-apt-repository -y  ppa:team-gcc-arm-embedded/ppa \
    # && apt-get update  \   
