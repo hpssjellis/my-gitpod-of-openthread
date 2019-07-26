@@ -2,6 +2,15 @@ FROM gitpod/workspace-full:latest
 
 USER root
 
+RUN apt-get update                                                                                        \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends dbus gcc g++ automake    \
+               libtool lsb-release make  clang-format-6.0   libdbus-1-dev libboost-dev libreadline-dev    \                                     
+               autoconf autoconf-archive  software-properties-common                                      \
+    && apt-get update  
+               
+# will clean folders last   
+    
+    
 # Get gcc-arm-embedded key
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B4D03348F75E3362B1E1C2A1D1FAA6ECF64D33B0
 
@@ -11,19 +20,12 @@ RUN echo "deb http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu bionic m
 # Install gcc-arm-armbedded
 RUN apt update && apt install -y --no-install-recommends \
     gcc-arm-embedded \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/*  
     
     
     
     
     
-   #\   
-   # && DEBIAN_FRONTEND=noninteractive add-apt-repository -y  ppa:team-gcc-arm-embedded/ppa \
-   # && apt-get update  \   
-   # && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends gcc-arm-embedded
- 
-               
-# will clean folders last   
     
  
 ## note not installing libreadline
@@ -42,5 +44,3 @@ USER root
 
 # Cleaning
 RUN apt-get clean  && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-
-
