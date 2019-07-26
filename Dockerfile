@@ -7,7 +7,11 @@ RUN apt-get update                                                              
                libtool lsb-release make  clang-format-6.0   libdbus-1-dev libboost-dev libreadline-dev    \                                     
                autoconf autoconf-archive  software-properties-common bsdtar                \
     && apt-get update  
-               
+
+
+
+## NOTE: not installing libreadline and libglib2.0-dev may cause some issues
+
 # will clean folders last   
     
     
@@ -28,7 +32,6 @@ RUN apt update && apt install -y --no-install-recommends \
     
     
  
-## note not installing libreadline bsdtar libglib2.0-dev may cause some issues
 
 USER gitpod
   
