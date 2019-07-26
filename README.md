@@ -3,6 +3,22 @@
 Openthread connects lots of little IoT microcomputers to each other and the internet. Think Nest home products.
 
 
+Run this gitpod live by clicking
+
+https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
+
+or load a pre-made gitpod by clicking
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/674e3367-1baf-43db-a205-dae91e24334c)
+
+
+.
+
+
+.
+
+
+
 Main link for openthread.io   
 https://openthread.io/
 
