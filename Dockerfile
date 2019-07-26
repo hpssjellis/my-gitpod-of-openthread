@@ -5,7 +5,7 @@ USER root
 RUN apt-get update                                                                                        \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends dbus gcc g++ automake    \
                libtool lsb-release make  clang-format-6.0   libdbus-1-dev libboost-dev libreadline-dev    \                                     
-               autoconf autoconf-archive  software-properties-common bsdtar libglib2.0-dev                \
+               autoconf autoconf-archive  software-properties-common bsdtar                \
     && apt-get update  
                
 # will clean folders last   
@@ -28,7 +28,7 @@ RUN apt update && apt install -y --no-install-recommends \
     
     
  
-## note not installing libreadline
+## note not installing libreadline bsdtar libglib2.0-dev may cause some issues
 
 USER gitpod
   
