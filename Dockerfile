@@ -3,9 +3,10 @@ FROM gitpod/workspace-full:latest
 USER root
 
 RUN apt-get update                                            \
-    && add-apt-repository -y ppa:team-gcc-arm-embedded/ppa   #\
-    #&& apt-get update -qq                                    \
-   # && apt-get install -y gcc-arm-embedded 
+    && add-apt-repository -y ppa:team-gcc-arm-embedded/ppa  
+    
+    
+    
     
     
    #\   
