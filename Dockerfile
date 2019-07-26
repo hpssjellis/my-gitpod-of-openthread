@@ -2,6 +2,8 @@ FROM gitpod/workspace-full:latest
 
 USER root
 
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B4D03348F75E3362B1E1C2A1D1FAA6ECF64D33B0
+
 RUN apt-get update                                            \
     && add-apt-repository -y ppa:team-gcc-arm-embedded/ppa  
     
