@@ -18,9 +18,13 @@ tasks:
               git clone https://github.com/openthread/pyspinel.git                                                             &&
               
               
-              echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt      &&   
-              apachectl start                                                                                                   &&
-              gp preview $(gp url 8001)                                                                                         &&
+              ./workspace/my-gitpod-of-openthread/openthread-all/openthread/bootstrap                                          &&
+              ./workspace/my-gitpod-of-openthread/openthread-all/borderrouter/bootstrap                                        &&
+              ./workspace/my-gitpod-of-openthread/openthread-all/wpantund/bootstrap                                            &&
+              
+              echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
+              apachectl start                                                                                                  &&
+              gp preview $(gp url 8001)                                                                                        &&
               
               
               echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt    
