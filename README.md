@@ -20,7 +20,7 @@ or load a pre-made gitpod by clicking
 
 
 
-These commands are automatically done
+These commands are automatically done from the openthread folder
 
 ```
  make -f examples/Makefile-nrf52840 USB=1 BOOTLOADER=1 BORDER_AGENT=1 BORDER_ROUTER=1 COMMISSIONER=1 JOINER=1 UDP_PROXY=1 CFLAGS+=-UCONFIG_GPIO_AS_PINRESET 
