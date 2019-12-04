@@ -22,7 +22,14 @@ or load a pre-made gitpod by clicking
 
 .
 
+To run any of the nordic examples the componenets tootlchan make.posix file needs these values
 
+```
+GNU_INSTALL_ROOT := /usr/bin
+GNU_VERSION := 7.3.1
+GNU_PREFIX := arm-none-eabi
+
+```
 .
 
 
