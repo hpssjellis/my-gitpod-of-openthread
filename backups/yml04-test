@@ -1,0 +1,39 @@
+image:
+  file: Dockerfile
+  
+ports:
+  - port: 8001
+  
+tasks:
+  -  command: mkdir /workspace/my-gitpod-of-openthread/logs                                                                    &&
+              mkdir /workspace/my-gitpod-of-openthread/openthread-all                                                          &&
+              touch /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt                                             &&
+       
+
+              echo "Starting .gitpod.yml installation" &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&
+              cd /workspace/my-gitpod-of-openthread/openthread-all                                                             &&
+              git clone https://github.com/openthread/wpantund.git                                                             &&
+              git clone https://github.com/openthread/borderrouter.git                                                         &&
+              git clone https://github.com/openthread/openthread.git                                                           &&
+              git clone https://github.com/openthread/pyspinel.git                                                             &&
+              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5/Binaries/nRF5SDK160098a08e2.zip   &&
+              unzip nRF5SDK160098a08e2.zip -d nordic-sdk
+              
+              
+              cd /workspace/my-gitpod-of-openthread/openthread-all/openthread                                                  &&
+              ./bootstrap                                                                                                      &&
+              make -f examples/Makefile-nrf52840 USB=1 BOOTLOADER=1 BORDER_AGENT=1 BORDER_ROUTER=1 COMMISSIONER=1 JOINER=1 UDP_PROXY=1 CFLAGS+=-UCONFIG_GPIO_AS_PINRESET  &&
+              arm-none-eabi-objcopy output/nrf52840/bin/ot-ncp-ftd -O ihex output/nrf52840/bin/ncp_app.hex                     &&
+              arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O ihex output/nrf52840/bin/ot-cli-ftd.hex                  &&
+              arm-none-eabi-objcopy output/nrf52840/bin/ot-ncp-ftd -O binary output/nrf52840/bin/ncp_app.bin                   &&
+              arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O binary output/nrf52840/bin/ot-cli-ftd.bin                &&             
+              
+              echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
+              apachectl start                                                                                                  &&
+              gp preview $(gp url 8001)                                                                                        &&
+              
+              
+              echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt    
+              
+              
+     
