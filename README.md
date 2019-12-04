@@ -15,7 +15,48 @@ Dec 4th, 2019 updated openthread with Nordic sdk.
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/e709c382-8574-4775-876c-002bfeecc374)
 
 
+# pre-compiled proof Openthread
 
+```
+# The main.c file is
+cd /workspace/my-gitpod-of-openthread/openthread-all/openthread/examples/apps/cli
+
+the .ld files are at 
+
+cd /workspace/my-gitpod-of-openthread/openthread-all/openthread/examples/platforms/nrf528xx/nrf52840
+
+# Final .hex files
+
+cd /workspace/my-gitpod-of-openthread/openthread-all/openthread/output/nrf52840/bin
+
+
+```
+
+
+
+# pre-compiled proof Nordic SDK
+
+
+```
+# note the main.c file here for peripheral blinky
+cd /workspace/my-gitpod-of-openthread/nordic/nordic-sdk/examples/ble_peripheral/ble_app_blinky
+ls -la
+
+# probably best to use the folders and go to nordic --> nordic-sdk --> examples --> ble_peripheral --> ble_app_blinky
+
+# Look at main.c
+
+
+Since the make command has already been done go to to see the results
+pca10059 --> s140 --> armgcc --> _build
+
+# should see some .hex files
+# or just use this cd command
+
+cd /workspace/my-gitpod-of-openthread/nordic/nordic-sdk/examples/ble_peripheral/ble_app_blinky/pca10059/s140/armgcc/_build
+
+
+```
 .
 
 To run any of the nordic examples the componenet s--> toolchain --> Makefile.posix file needs these values. Should have been automatically changed. But worth checking
