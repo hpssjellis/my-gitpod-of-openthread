@@ -7,6 +7,7 @@ ports:
 tasks:
   -  command: mkdir /workspace/my-gitpod-of-openthread/logs                                                                    &&
               mkdir /workspace/my-gitpod-of-openthread/openthread-all                                                          &&
+              mkdir /workspace/my-gitpod-of-openthread/nordic                                                                  &&
               touch /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt                                             &&
        
 
@@ -17,9 +18,15 @@ tasks:
               git clone https://github.com/openthread/openthread.git                                                           &&
               git clone https://github.com/openthread/pyspinel.git                                                             &&
               
-              cd /workspace/my-gitpod-of-openthread                                                                            &&
+              cd /workspace/my-gitpod-of-openthread/nordic                                                                     &&
               wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5/Binaries/nRF5SDK160098a08e2.zip   &&
               unzip nRF5SDK160098a08e2.zip -d nordic-sdk                                                                       &&
+              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread-and-Zigbee/nRF5SDKforThreadandZigbeev3209fade31.zip   &&
+              unzip nRF5SDKforThreadandZigbeev3209fade31.zipp -d nordic-thread-zigbee                                          &&
+              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread/nRF5SDKforThreadv011084a130f.zip   &&
+              unzip nRF5SDKforThreadv011084a130f.zip -d nordic-thread                                                          &&
+              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/RaspPiOTBorderRouterDemov3101alpha.zip   &&
+              unzip RaspPiOTBorderRouterDemov3101alpha.zip -d nordic-rp-otbr                                                   &&
               
               
               cd /workspace/my-gitpod-of-openthread/openthread-all/openthread                                                  &&
