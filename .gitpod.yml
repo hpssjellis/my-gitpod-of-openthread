@@ -19,19 +19,22 @@ tasks:
               git clone https://github.com/openthread/pyspinel.git                                                             &&
               
               cd /workspace/my-gitpod-of-openthread/nordic                                                                     &&
-              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5/Binaries/nRF5SDK160098a08e2.zip   &&
-              unzip nRF5SDK160098a08e2.zip -d nordic-sdk                                                                       &&
-              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread-and-Zigbee/nRF5SDKforThreadandZigbeev3209fade31.zip   &&
-              unzip nRF5_SDK_for_Thread_and_Zigbee_v3.2.0_9fade31.zip -d nordic-thread-zigbee                                  &&
-              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread/nRF5SDKforThreadv011084a130f.zip   &&
-              unzip nRF5SDKforThreadv011084a130f.zip -d nordic-thread                                                          &&
-              wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread/nRF5SDKforThreadv011084a130f.zip   &&
-              unzip nRF5SDKforThreadv011084a130f.zip -d nordic-rpi-otbr                                                        &&                                                
               
-              rm nRF5SDK160098a08e2.zip                     &&
-              rm nRF5SDKforThreadandZigbeev3209fade31.zip   &&  
-              rm  nRF5SDKforThreadv011084a130f.zip          &&
-              rm nRF5SDKforThreadv011084a130f.zip           &&
+wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5/Binaries/nRF5SDK160098a08e2.zip   &&
+wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread-and-Zigbee/nRF5SDKforThreadandZigbeev3209fade31.zip   &&
+wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/nRF5-SDK-for-Thread/nRF5SDKforThreadv011084a130f.zip   &&
+wget https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5-SDK-for-Thread/RaspPiOTBorderRouterDemov3101alpha.zip   &&
+      
+              unzip nRF5SDK160098a08e2.zip -d nordic-sdk                                                                       &&
+              unzip nRF5_SDK_for_Thread_and_Zigbee_v3.2.0_9fade31.zip -d nordic-thread-zigbee                                  &&
+              unzip nRF5SDKforThreadv011084a130f.zip -d nordic-thread                                                          &&
+              unzip nRF5SDKforThreadv011084a130f.zip -d nordic-rpi-otbr                                                        &&                                                
+           
+              rm nRF5SDK160098a08e2.zip                                    &&
+              rm nRF5SDKforThreadandZigbeev3209fade31.zip                  &&  
+              rm nRF5SDKforThreadv011084a130f.zip                          &&
+              rm RaspPi_OT_Border_Router_Demo_v3.1.0-1.alpha.zip           &&
+
               
               
               
