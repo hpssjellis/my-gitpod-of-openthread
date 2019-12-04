@@ -13,3 +13,12 @@
 
 
 arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O binary output/nrf52840/bin/ot-cli-ftd.bin
+
+
+
+
+nordic latest sdk at
+
+https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5/Binaries/nRF5SDK160098a08e2.zip
+
+
