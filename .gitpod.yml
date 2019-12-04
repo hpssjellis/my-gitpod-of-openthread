@@ -43,10 +43,7 @@ tasks:
               arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O ihex output/nrf52840/bin/ot-cli-ftd.hex                  &&
               arm-none-eabi-objcopy output/nrf52840/bin/ot-ncp-ftd -O binary output/nrf52840/bin/ncp_app.bin                   &&
               arm-none-eabi-objcopy output/nrf52840/bin/ot-cli-ftd -O binary output/nrf52840/bin/ot-cli-ftd.bin                &&             
-              
-              echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
-              apachectl start                                                                                                  &&
-              gp preview $(gp url 8001)                                                                                        &&
+                                                                                      &&
               
               
               cp /workspace/my-gitpod-of-openthread/backups/Makefile.posix  /workspace/my-gitpod-of-openthread/nordic/nordic-thread-only/components/toolchain/gcc/Makefile.posix    &&
@@ -60,7 +57,10 @@ tasks:
               cd /workspace/my-gitpod-of-openthread   &&
               
               
-              
+                         
+              echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
+              apachectl start                                                                                                  &&
+              gp preview $(gp url 8001)     
               
               echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt    
               
