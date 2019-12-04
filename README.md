@@ -8,6 +8,13 @@ Run this gitpod live by clicking
 
 https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
 
+
+Dec 4th, 2019 updated openthread with Nordic sdk. (nordic needs setup)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/34c2e221-4081-4a8e-bb2b-899d270bf050)
+
+
+
 or load a pre-made gitpod by clicking
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/674e3367-1baf-43db-a205-dae91e24334c)
