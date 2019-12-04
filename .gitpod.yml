@@ -28,12 +28,12 @@ tasks:
               unzip nRF5SDK160098a08e2.zip -d nordic-sdk                                 &&
               unzip nRF5SDKforThreadandZigbeev3209fade31.zip -d nordic-thread-zigbee     && 
               unzip nRF5SDKforThreadv011084a130f.zip -d nordic-thread-only               &&
-              unzip RaspPi_OT_Border_Router_Demo_v3.1.0-1.alpha.zip -d nordic-rpi-otbr   &&
+              unzip RaspPiOTBorderRouterDemov3101alpha.zip -d nordic-rpi-otbr            &&
     
               rm nRF5SDK160098a08e2.zip                                    &&
               rm nRF5SDKforThreadandZigbeev3209fade31.zip                  &&  
               rm nRF5SDKforThreadv011084a130f.zip                          &&
-              rm RaspPi_OT_Border_Router_Demo_v3.1.0-1.alpha.zip           &&
+              rm RaspPiOTBorderRouterDemov3101alpha.zip                    &&
 
    
               cd /workspace/my-gitpod-of-openthread/openthread-all/openthread                                                  &&
