@@ -3,6 +3,8 @@
 Openthread connects lots of little IoT microcomputers to each other and the internet. Think Nest home products.
 
 
+# Now with 3 nordic sdk's
+
 Run this gitpod live by clicking
 
 
