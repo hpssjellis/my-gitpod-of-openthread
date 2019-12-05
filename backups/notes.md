@@ -1,3 +1,11 @@
+    
+    Should be a way to save the wget nordic latest file as a named.zip then unzip then delete. would be better than the fixed uplad names.
+    
+    
+    
+    
+    
+    
               cd /workspace/my-gitpod-of-openthread/openthread-all/openthread                                                  
               ./bootstrap                                                                                                      
               make -f examples/Makefile-nrf52840 USB=1 BOOTLOADER=1 BORDER_AGENT=1 BORDER_ROUTER=1 COMMISSIONER=1 JOINER=1 UDP_PROXY=1 CFLAGS+=-UCONFIG_GPIO_AS_PINRESET  
