@@ -103,3 +103,12 @@ https://github.com/openthread
 My bash installation file is at https://github.com/hpssjellis/particle.io-photon-high-school-robotics/blob/master/a17-particle-mesh/openthread/openthread-install-all.sh
 
 go up a folder for more information, this link is also useful https://hpssjellis.github.io/particle.io-photon-high-school-robotics/a17-particle-mesh/openthread/install-openthread.html
+
+
+
+
+Good youtube video about the nordic sdk
+
+https://www.youtube.com/watch?v=kyPKIRQIacI
+
+
