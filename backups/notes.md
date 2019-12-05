@@ -1,5 +1,28 @@
     
+    
+    
+    
+    
+    
+    
+    
+    
     Should be a way to save the wget nordic latest file as a named.zip then unzip then delete. would be better than the fixed uplad names.
+    
+    
+```
+       for nano 33 BLE 
+    MEMORY
+{
+  FLASH (rx) : ORIGIN = 0x10000, LENGTH = 0xf0000
+  RAM (rwx) :  ORIGIN = 0x20000000, LENGTH = 0x40000
+}
+    
+    
+    ```
+    
+    
+    
     
     
     
