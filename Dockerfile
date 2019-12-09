@@ -9,7 +9,7 @@ RUN apt-get update                                                              
     && apt-get update  
     
     
-RUN  python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)" \
+# RUN  python -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)" \
   
     
     
