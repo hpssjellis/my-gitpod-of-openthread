@@ -13,8 +13,8 @@ cd $wow4
 echo "Running platformio init -b uno in the new directory"
 pio init -b uno
 
-
-echo "Good idea to go to and change the main.c file before hitting enter"
+cp /workspace/my-gitpod-of-openthread/main.cpp src
+echo "Good idea to go to check the main.cpp file in the new src folder make changesand ctrl-s to save before hitting enter"
 read
 pio remote run -t upload
 pio remote device monitor
