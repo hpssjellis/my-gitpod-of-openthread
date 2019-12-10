@@ -1,5 +1,16 @@
     
+    platformio
     
+    pio account login
+    pio remote run -t upload
+    pio remote device monitor
+    
+    
+    new to try
+    
+    platformio run -d /tmp/piotmp --disable-auto-clean -t nobuild -t upload
+    
+    no effect on gitpod
     
     
     
