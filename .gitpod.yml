@@ -58,6 +58,9 @@ tasks:
               python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/develop/scripts/get-platformio.py)" &&
               
               
+              cd /workspace/my-gitpod-of-openthread &&
+              chmod +x a01-uno-create.sh            &&
+              
                          
               echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
               apachectl start                                                                                                  &&
