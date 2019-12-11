@@ -1,3 +1,14 @@
+    Basic upload command from inside platformio
+    
+    
+
+avrdude -v -p atmega328p -C "C:\Users\[user name]\.platformio\packages\tool-avrdude\avrdude.conf" -c arduino -b 115200 -D -P "COM15" -U flash:w:.pio\build\uno\firmware.hex:i
+
+
+
+    
+    
+    
     
     platformio
     
