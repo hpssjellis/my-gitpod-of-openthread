@@ -6,7 +6,18 @@ avrdude -v -p atmega328p -C "C:\Users\[user name]\.platformio\packages\tool-avrd
 
 
 
-    
+  Naon33ble using platformio .ld file
+  ```
+[env:myenv]
+platform = https://github.com/platformio/platform-nordicnrf52.git
+framework = arduino
+board = nano33ble
+
+```
+
+
+dev situation
+
     
     
     
