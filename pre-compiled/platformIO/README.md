@@ -1,5 +1,7 @@
 Install visual studio code https://code.visualstudio.com/ or use this gitpod
 
+Check out the folders that have a main.cpp and the .pio folder sturcture with a .hex file 
+
 
 This folders and files are for platformIO instant upload of hex files with the corresponding main.cpp file (main.cpp just their for reference).
 
