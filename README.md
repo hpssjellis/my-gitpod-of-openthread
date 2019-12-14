@@ -3,7 +3,7 @@
 Openthread connects lots of little IoT microcomputers to each other and the internet. Think Nest home products.
 
 
-# Now with 3 nordic sdk's
+# Now with 3 nordic sdk's and PlatformIO running
 
 Run this gitpod live by clicking
 
@@ -21,6 +21,28 @@ Dec 4th, 2019 updated openthread with Nordic sdk.
 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/e709c382-8574-4775-876c-002bfeecc374)
+
+
+# proof PlatformIO
+
+
+If you have an Arduino Uno
+```
+mkdir pio-test
+cd pio-test
+pio init -b uno
+# check out the src folder --> main.cpp. Make one if not there (Should add some serial code to test)
+pio run
+
+# if remote agent working on a local computer setup with the Arduin (pio account login, pio remote agent start)
+
+pio account login
+pio remote run -t upload
+pio remote device monitor
+
+```
+
+
 
 
 # pre-compiled proof Openthread
@@ -43,6 +65,8 @@ cd /workspace/my-gitpod-of-openthread/openthread-all/openthread/output/nrf52840/
 
 
 # pre-compiled proof Nordic SDK
+
+Help about each example https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v15.0.0%2Fnrf_dev_simple_timer_example.html
 
 
 ```
