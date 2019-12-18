@@ -11,17 +11,9 @@ Run this gitpod live by clicking
 https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
 
 
-Dec 8th, 2019 updated with Nordic-sdk and the amazing [PlatformIO](https://platformio.org/) 
+Dec 8th, 2019 updated with Nordic-sdk, Openthread and the amazing [PlatformIO](https://platformio.org/) 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/fb33bf28-258e-4106-aee1-849e6e0a0934)
-
-
-
-Dec 4th, 2019 updated openthread with Nordic sdk.
-
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/e709c382-8574-4775-876c-002bfeecc374)
-
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/ebe6a6ac-0341-41cc-99b2-5da0ea3f8a83)
 
 # proof PlatformIO
 
