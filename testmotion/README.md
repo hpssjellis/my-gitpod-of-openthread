@@ -1,3 +1,6 @@
+txt files have the features info for testing.
+
+
 
 ei-paint-brush-01-v2.zip   96x96 color. Data to big to compile
 
