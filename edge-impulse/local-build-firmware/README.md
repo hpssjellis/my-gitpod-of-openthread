@@ -29,6 +29,12 @@ https://docs.edgeimpulse.com/docs/running-your-impulse-locally-zephyr
 4. I have not yet figured out how to do the Nordic boards. Although this Gitpod was originally made to compile nordic boards, 
 so probably some information about that somewhere on this Gitpod.
 
+https://docs.edgeimpulse.com/docs/nordic-semi-nrf52840-dk
+
+https://docs.edgeimpulse.com/docs/nordic-semi-nrf5340-dk
+
+
 
 5. Himax needs a license which I don't have
+6. 
 https://docs.edgeimpulse.com/docs/running-your-impulse-himax
