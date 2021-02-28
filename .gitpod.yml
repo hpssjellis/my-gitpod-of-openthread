@@ -61,10 +61,29 @@ tasks:
               cd /workspace/my-gitpod-of-openthread &&
               chmod +x a01-uno-create.sh            &&
               
+
+              
+                            
+              cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/siliconLabs                            &&
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-silabs-tb-sense-2.git                  &&  
+              unzip example-standalone-inferencing-silabs-tb-sense-2.zip                                                     &&         
+              chmod +x a01-siliconLabs.sh                                                                                    &&
+              
+              cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/etaCompute                             &&
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git                            &&  
+              unzip example-standalone-inferencing-ecm3532.zip                                                               &&         
+              chmod +x a01-eta.sh                                                                                            &&
+              
+              echo "Upload your edge impulse C++ file without EON to this folder "                                           &&
+              echo "Then run ./a01-eta.sh, Then move the Build folder top .bin file to the eta-edge-serial-upload folder and download to your computer " &&
+              
+              
+              
+              
                          
-              echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
-              apachectl start                                                                                                  &&
-              gp preview $(gp url 8001)                                                                                        &&
+              #echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
+              #apachectl start                                                                                                  &&
+              #gp preview $(gp url 8001)                                                                                        &&
               
               echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt    
               
