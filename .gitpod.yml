@@ -73,7 +73,7 @@ tasks:
               
               
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/etaCompute                             &&
-              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git    etc-compile             &&         
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git    eta-compile             &&         
               mv a01-eta.sh eta-compile/                                                                                     &&         
               cd eta-compile                                                                                                 &&         
               chmod +x a01-eta.sh                                                                                            &&
