@@ -65,7 +65,7 @@ tasks:
               
                             
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/siliconLabs                                     &&
-              git clone https://github.com/edgeimpulse/example-standalone-inferencing-silabs-tb-sense-2.git  -d silicon-labs-compile  &&     
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-silabs-tb-sense-2.git   silicon-labs-compile    &&     
               mv a01-siliconLabs.sh   silicon-labs-compile/                                                                           &&
               cd silicon-labs-compile                                                                                                 &&
               chmod +x a01-siliconLabs.sh                                                                                             &&
@@ -73,7 +73,7 @@ tasks:
               
               
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/etaCompute                             &&
-              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git   -d etc-compile           &&         
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git    etc-compile             &&         
               mv a01-eta.sh eta-compile/                                                                                     &&         
               cd eta-compile                                                                                                 &&         
               chmod +x a01-eta.sh                                                                                            &&
