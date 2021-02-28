@@ -65,13 +65,11 @@ tasks:
               
                             
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/siliconLabs                            &&
-              git clone https://github.com/edgeimpulse/example-standalone-inferencing-silabs-tb-sense-2.git                  &&  
-              unzip example-standalone-inferencing-silabs-tb-sense-2.zip                                                     &&         
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-silabs-tb-sense-2.git ./               &&     
               chmod +x a01-siliconLabs.sh                                                                                    &&
               
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/etaCompute                             &&
-              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git                            &&  
-              unzip example-standalone-inferencing-ecm3532.zip                                                               &&         
+              git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git   ./                       &&         
               chmod +x a01-eta.sh                                                                                            &&
               
               echo "Upload your edge impulse C++ file without EON to this folder "                                           &&
