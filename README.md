@@ -11,6 +11,15 @@ Run this gitpod live by clicking
 https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
 
 
+Update Feb 28th, 2012
+
+Now trying Edge impulse try the folder [https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware](https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware) for installation on 
+
+etaComputer, SiliconLabs, links about C++, MBEd, Zephre, Nordic and Himax
+
+
+
+
 Dec 8th, 2019 updated with Nordic-sdk, Openthread and the amazing [PlatformIO](https://platformio.org/) 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/ebe6a6ac-0341-41cc-99b2-5da0ea3f8a83)
