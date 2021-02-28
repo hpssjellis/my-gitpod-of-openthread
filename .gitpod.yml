@@ -77,14 +77,7 @@ tasks:
               echo "Upload your edge impulse C++ file without EON to this folder "                                           &&
               echo "Then run ./a01-eta.sh, Then move the Build folder top .bin file to the eta-edge-serial-upload folder and download to your computer " &&
               
-              
-              
-              
-                         
-              #echo "Starting Apache"                   &>>  /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt     &&   
-              #apachectl start                                                                                                  &&
-              #gp preview $(gp url 8001)                                                                                        &&
-              
+
               echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt    
               
               
