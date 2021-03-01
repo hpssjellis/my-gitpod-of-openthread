@@ -3,10 +3,10 @@
 Openthread connects lots of little IoT microcomputers to each other and the internet. Think Nest home products.
 
 
-# Now with 3 nordic sdk's and PlatformIO running
 
-Run this gitpod live by clicking
 
+# Run this gitpod live by clicking 
+   (Needs a github or gitlab login)
 
 https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
 
@@ -18,11 +18,23 @@ For Edge impulse try the folder [https://github.com/hpssjellis/my-gitpod-of-open
 etaCompute, SiliconLabs, Arduino-nan33bleSense, links about C++, MBEd, Zephre, Nordic and Himax
 
 
+The live gitpod.io link above makes the gitpod from scratch, nice to get newer files but takes a while to build (~10 minutes) and may crash
+
+below link will load a pre-made working gitpod. Very cool and faster to load but might not have the latest github entries.
+
+(not saved yet)
+
+
 
 
 Dec 8th, 2019 updated with Nordic-sdk, Openthread and the amazing [PlatformIO](https://platformio.org/) 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/ebe6a6ac-0341-41cc-99b2-5da0ea3f8a83)
+
+
+
+
+# Now with 3 nordic sdk's and PlatformIO running
+
 
 # proof PlatformIO
 
