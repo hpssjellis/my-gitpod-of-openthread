@@ -15,7 +15,7 @@ Update Feb 28th, 2012
 
 Now trying Edge impulse try the folder [https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware](https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware) for installation on 
 
-etaComputer, SiliconLabs, links about C++, MBEd, Zephre, Nordic and Himax
+etaCompute, SiliconLabs, links about C++, MBEd, Zephre, Nordic and Himax
 
 
 
