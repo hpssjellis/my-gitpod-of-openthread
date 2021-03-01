@@ -72,6 +72,12 @@ tasks:
               
               
               
+              cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/portenta                               &&
+              chmod +x a00-get-lora-example.sh                                                                               &&
+              chmod +x a01-portenta.sh                                                                                       &&
+              
+              
+              
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/etaCompute                             &&
               git clone https://github.com/edgeimpulse/example-standalone-inferencing-ecm3532.git    eta-compile             &&         
               mv a01-eta.sh eta-compile/                                                                                     &&         
