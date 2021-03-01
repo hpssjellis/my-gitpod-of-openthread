@@ -8,6 +8,8 @@ cd example-portenta-lorawan
 
 echo "Need to figure out how to build this?"
 
+echo "try sh arduino-build.sh --build"
+
 
 
 
