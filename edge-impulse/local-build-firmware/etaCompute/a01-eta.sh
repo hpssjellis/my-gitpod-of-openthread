@@ -8,7 +8,7 @@ read
 
 echo "unzipping and putting all the files into this file structure"
 unzip edge.zip 
-echo "In the src folder scheck the mani.cpp file and make changes or replace it with a different one"
+echo "In the src folder check the mani.cpp file and make changes or replace it with a different one"
 echo "enter to contrinue, ctrl-C to quit"
 read
 
