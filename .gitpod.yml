@@ -75,6 +75,8 @@ tasks:
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/portenta                               &&
               chmod +x a00-get-lora-example.sh                                                                               &&
               chmod +x a01-portenta.sh                                                                                       &&
+              
+              cd /home/linuxbrew/.linuxbrew                                                                                  &&
               curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh                        &&
               
               
