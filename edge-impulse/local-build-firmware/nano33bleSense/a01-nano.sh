@@ -22,7 +22,7 @@ make -j
 
 
 echo "Copying the build/edge_impulse_inferencing_bootloader.bin to the downloadable folder eta-edge-serial-upload "
-cp build/edge_impulse_inferencing_bootloader.bin     ../nano-edge-serial-upload/
+cp build/edge_impulse_inferencing_bootloader.bin     ../portenta-edge-serial-upload/
 
 
 echo "Download the full folder eta-edge-serial-upload so that you can install the new software on your ETA Compute device using the appropriate installer"
