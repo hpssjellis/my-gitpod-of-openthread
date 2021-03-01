@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Upload your edge impulse deployed without EON compiler C++ zipped library to this directory and rename it as edge.zip"
+echo "Good idea to duplicate this folder so you can easily upload a different program."
 echo "enter to contrinue, ctrl-C to quit"
 read
 
