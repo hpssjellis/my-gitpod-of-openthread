@@ -84,8 +84,18 @@ tasks:
               cd eta-compile                                                                                                 &&         
               chmod +x a01-eta.sh                                                                                            &&
               
+              
+              
+              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh                        &&
+              
+              
+              
               echo "Upload your edge impulse C++ file without EON to this folder "                                           &&
               echo "Then run ./a01-eta.sh, Then move the Build folder top .bin file to the eta-edge-serial-upload folder and download to your computer " &&
+              
+              
+              
+              
               
 
               echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-of-openthread/logs/gitpod-install-log.txt    
