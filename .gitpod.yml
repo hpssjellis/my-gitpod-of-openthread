@@ -75,7 +75,7 @@ tasks:
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/portenta                               &&
               chmod +x a00-get-lora-example.sh                                                                               &&
               chmod +x a01-portenta.sh                                                                                       &&
-              
+              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh                        &&
               
               
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/etaCompute                             &&
@@ -86,7 +86,6 @@ tasks:
               
               
               
-              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh                        &&
               
               
               
