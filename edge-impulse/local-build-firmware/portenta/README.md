@@ -1,6 +1,15 @@
 
 
 
+I needed a non-locked place to save the arduino-cli so I just did
+
+```
+
+cd /home/linuxbrew/.linuxbrew                                                                        
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh       
+
+```
+
 Explained at 
 
 https://docs.edgeimpulse.com/docs/arduino-portenta-h7
