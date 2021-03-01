@@ -13,9 +13,9 @@ https://gitpod.io/#github.com/hpssjellis/my-gitpod-of-openthread
 
 Update Feb 28th, 2012
 
-Now trying Edge impulse try the folder [https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware](https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware) for installation on 
+For Edge impulse try the folder [https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware](https://github.com/hpssjellis/my-gitpod-of-openthread/tree/master/edge-impulse/local-build-firmware) for installation on 
 
-etaCompute, SiliconLabs, links about C++, MBEd, Zephre, Nordic and Himax
+etaCompute, SiliconLabs, Arduino-nan33bleSense, links about C++, MBEd, Zephre, Nordic and Himax
 
 
 
