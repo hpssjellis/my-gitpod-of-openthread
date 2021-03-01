@@ -9,6 +9,7 @@ read
 echo "unzipping and putting all the files into this file structure"
 unzip edge.zip 
 echo "In the src folder check the main.cpp file and make changes or replace it with a different one"
+echo "If using the default Edge Impulse program you will need to insert features in the array. see try me folder"
 echo "enter to contrinue, ctrl-C to quit"
 read
 
