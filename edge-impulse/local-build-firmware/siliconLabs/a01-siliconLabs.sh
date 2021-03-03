@@ -17,8 +17,8 @@ read
 
 
 echo "Compiling your complete impulse"
-echo "This is the most likely place to have issues"
-./build.sh --build  .
+echo "This is the most likely place to have issues. Note: need to install simplicity studio as a command line"
+./build.sh --build -z ./ei-workspace/
 
 
 echo "The final .bin file in the build folder should be able to be dragged to the Thunderbird auto opened folder"
