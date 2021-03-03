@@ -71,10 +71,24 @@ tasks:
               chmod +x a01-siliconLabs.sh                                                                                             &&
               
               
+              cd /workspace/my-gitpod-of-openthread                                                                         &&
+              pip3 install --user west                                                                                      && 
+              cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/nordic                                &&
+              git clone https://github.com/edgeimpulse/firmware-nrf52840-5340-dk   nordic-compile                           &&     
+              mv a01-nordic-nrf5280.sh   nordic-compile/                                                                    &&
+              mv a02-nordic-nrf5340.sh   nordic-compile/                                                                    &&
+              cd nordic-compile                                                                                             &&
+              chmod +x a01-nordic-nrf5280.sh                                                                                &&
+              chmod +x a02-nordic-nrf5340.sh                                                                                &&
+              
+              
               
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/portenta                               &&
               chmod +x a00-get-lora-example.sh                                                                               &&
               chmod +x a01-portenta.sh                                                                                       &&
+              
+              
+              
               
               cd /home/linuxbrew/.linuxbrew                                                                                  &&
               curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh                        &&
