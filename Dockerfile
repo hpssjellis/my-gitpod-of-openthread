@@ -20,6 +20,17 @@ RUN apt-get update                                                              
 #    && chmod -R 777 /home/gitpod/.po-util      
 
 
+
+RUN  /bin/bash -c "bash <(curl -SL http://www.silabs.com/Support%20Documents/Software/SimplicityStudio-v4.tgz | tar -xz)"  \
+     #&& sudo dpkg --add-architecture i386 \
+     #&& sudo apt-get update \
+     && cd SimplicityStudio_v4 \
+     && sudo ./setup.sh
+
+
+
+
+
 ## NOTE: not installing libreadline and libglib2.0-dev may cause some issues
 
 # will clean folders last   
