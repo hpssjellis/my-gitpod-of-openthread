@@ -68,6 +68,7 @@ tasks:
               git clone https://github.com/edgeimpulse/example-standalone-inferencing-silabs-tb-sense-2.git   silicon-labs-compile    &&     
               mv a01-siliconLabs.sh   silicon-labs-compile/                                                                           &&
               cd silicon-labs-compile                                                                                                 &&
+              mkdir ei-workspace                                                                                                      &&
               chmod +x a01-siliconLabs.sh                                                                                             &&
               
               
