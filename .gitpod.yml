@@ -73,6 +73,7 @@ tasks:
               
               cd /workspace/my-gitpod-of-openthread                                                                         &&
               pip3 install --user west                                                                                      && 
+              west init -l                                                                                                  &&
               cd /workspace/my-gitpod-of-openthread/edge-impulse/local-build-firmware/nordic                                &&
               git clone https://github.com/edgeimpulse/firmware-nrf52840-5340-dk   nordic-compile                           &&     
               mv a01-nordic-nrf5280.sh   nordic-compile/                                                                    &&
