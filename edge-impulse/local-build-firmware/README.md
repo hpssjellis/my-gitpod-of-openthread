@@ -36,5 +36,4 @@ https://docs.edgeimpulse.com/docs/nordic-semi-nrf5340-dk
 
 
 5. Himax needs a license which I don't have
-6. 
 https://docs.edgeimpulse.com/docs/running-your-impulse-himax
